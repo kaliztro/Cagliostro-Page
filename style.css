@@ -51,7 +51,7 @@ border-top: 0.4px solid #FFFFFF;
 .conteudo-principal-escrito {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 30px;
 }
 
 .conteudo-principal-escrito-titulo {
@@ -111,12 +111,12 @@ border-top: 0.4px solid #FFFFFF;
     font-family: 'Sarala', sans-serif;
     font-weight: 300;
     font-size: 18px;
-    color: #ECD6C4;
+    color: #FFFFFF;
 }
 
 .rodape {
     padding: 32px;
-    border-top: 0.4px solid #FFF2E7;
+    border-top: 0.4px solid #FFFFFF;
 }
 
 .rodape-imagem {
@@ -125,4 +125,62 @@ border-top: 0.4px solid #FFFFFF;
     margin: 0 auto;
 
 }
+
+/* COMANDOS */
+
+.cabecalhoCMD {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 70px;
+}
+
+.conteudo-principal-cmd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;  
+    color: #FFFFFF;
+}
+
+.conteudo-cmds-slash {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.cmd-adm {
+    color: #FFFFFF;   
+    display: flex; 
+    padding: 24px;
+    /* align-items: center;
+    justify-content: flex-start;  */
+    flex-direction: row; 
+}
+
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+    }
+
+.coluna-50 {
+    width: 624px;
+}
+
+.cmd-adm-titulo {
+    font-size: 34px;
+    padding: 0px 0px 24px;
+}
+
+.cont-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
+
+
 
