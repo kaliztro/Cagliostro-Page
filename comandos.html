@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+<body>
+
+<script type="text/javascript" src="./javascript/console.js"></script>
+
 <header class="cabecalhoCMD">
     <nav class="cabecalho-menu">
         <a class="cabecalho-menu-item" href="./index.html">Inicio</a>
@@ -28,38 +32,85 @@
     
             <h2 class="titulo">Comandos de adiministração</h2>
     
-            <a class="CMD" href="./subComandos/apagar.html"> <b>/apagar</b> : apaga as mensagens de um canal de texto.</a>
-            <a class="CMD" href=""> <b>/ban</b> : Bane o usuario selecionado do servidor.</a>
-            <a class="CMD"> <b>/expulsar</b> : Expulsa o usuario selecionado do servidor.</a>
-            <a class="CMD"> <b>/mutar</b> : Silencia o usuario selecinado no servidor.</a>
-            <a class="CMD"> <b>/cargo</b> : Atribui um cargo ao membro mencionado.</a>
-            <a class="CMD"> <b>/rcargo</b> : Remove um cargo do membro mencionado.</a>
-            <a class="CMD"> <b>/falar</b> : Bot fala o que for escrito.</a>
-            <a class="CMD"> <b>/say</b> : Bot fala o que for escrito sé que em Embed.</a>
-            <a class="CMD"> <b>/lock</b> : Tranca um canal.</a>
-            <a class="CMD"> <b>/unlock</b> : Destranca um canal.</a>
-            <a class="CMD"> <b>/prefix</b> : Altera o prefixo do bot.</a>
+            <a class="CMD" onclick="abrir(01)"> <b>/apagar</b> : apaga as mensagens de um canal de texto.</a>
+            <a class="CMD" onclick="abrir(02)"> <b>/ban</b> : Bane o usuario selecionado do servidor.</a>
+            <a class="CMD" onclick="abrir(03)"> <b>/expulsar</b> : Expulsa o usuario selecionado do servidor.</a>
+            <a class="CMD" onclick="abrir(04)"> <b>/mutar</b> : Silencia o usuario selecinado no servidor.</a>
+            <a class="CMD" onclick="abrir(05)"> <b>/cargo</b> : Atribui um cargo ao membro mencionado.</a>
+            <a class="CMD" onclick="abrir(06)"> <b>/rcargo</b> : Remove um cargo do membro mencionado.</a>
+            <a class="CMD" onclick="abrir(07)"> <b>/falar</b> : Bot fala o que for escrito.</a>
+            <a class="CMD" onclick="abrir(08)"> <b>/say</b> : Bot fala o que for escrito sé que em Embed.</a>
+            <a class="CMD" onclick="abrir(09)"> <b>/lock</b> : Tranca um canal.</a>
+            <a class="CMD" onclick="abrir(10)"> <b>/unlock</b> : Destranca um canal.</a>
+            <a class="CMD" onclick="abrir(11)"> <b>/prefix</b> : Altera o prefixo do bot.</a>
         </div>
     
         <div class="div2">
             <h2 class="titulo">Comandos de informações</h2>
     
-            <a class="CMD"> <b>/avatar</b> : Mostra o seu avatar, ou o avatar de quem vc mencionar.</a>
-            <a class="CMD"> <b>/banner</b> : Mostra o seu banner, ou o banner de quem vc mencionar.</a>
-            <a class="CMD"> <b>/botinfo</b> : Mostra as informações do bot.</a>
-            <a class="CMD"> <b>/userinfo</b> : Mostra as suas informações ou a do usuario mencionado.</a>
-            <a class="CMD"> <b>/serverinfo</b> : Mostra as informaçoes do servidor</a>
+            <a class="CMD" onclick="abrir(12)"> <b>/avatar</b> : Mostra o seu avatar, ou o avatar de quem vc mencionar.</a>
+            <a class="CMD" onclick="abrir(13)"> <b>/banner</b> : Mostra o seu banner, ou o banner de quem vc mencionar.</a>
+            <a class="CMD" onclick="abrir(14)"> <b>/botinfo</b> : Mostra as informações do bot.</a>
+            <a class="CMD" onclick="abrir(15)"> <b>/userinfo</b> : Mostra as suas informações ou a do usuario mencionado.</a>
+            <a class="CMD" onclick="abrir(16)"> <b>/serverinfo</b> : Mostra as informaçoes do servidor</a>
             <a class="CMD"> <b>/ping</b> : Mostra o ping do bot.</a>
             <a class="CMD"> <b>/tempo</b> : Mostra o tempo que o bot esta ON.</a>
-            <a class="CMD"> <b>/ticket</b> : Abre um ticket com a adm do servidor. (EM MANUTENÇÃO)</a>
+            <a class="CMD" onclick="abrir(19)"> <b>/ticket</b> : Abre um ticket com a adm do servidor. (EM MANUTENÇÃO)</a>
         </div>
     
         <div class="div3">
             <h2 class="titulo">Outros comandos</h2>
     
             <a class="CMD"> <b>/coinflip</b> : Jogo de Cara ou Coroa.</a>
-            <a class="CMD"> <b>/8ball</b> : Responde suas perguntas.</a>
-            <a class="CMD"> <b>/emoji</b> : Envia o emoji animado escolhido no chat.</a>
+            <a class="CMD" onclick="abrir(21)"> <b>/8ball</b> : Responde suas perguntas.</a>
+            <a class="CMD" onclick="abrir(22)"> <b>/emoji</b> : Envia o emoji animado escolhido no chat.</a>
+        </div>
+    </section>
+    
+<!-- popup -->
+    <section> 
+        <div id="popup" class="popup">
+            <div class="fechar" onclick="fechar(01)">
+                <p class="btn">X</p>
+            </div>
+            <img class="gif" src="./gif/apagar.gif" alt=" ah não! algo deu errado e o gif não carregou. pressione 'F' para respeito.">
+            <p class="descricao">Máximo 99 mensagens.</p>
+        </div>
+        <div id="popup02" class="popup">
+            <div class="fechar" onclick="fechar(02)">
+                <p class="btn">X</p>
+            </div>
+            <img class="gif" src="" alt=" ah não! algo deu errado e o gif não carregou. pressione 'F' para respeito.">
+        </div>
+        <div id="popup03" class="popup">
+            <div class="fechar" onclick="fechar(03)">
+                <p class="btn">X</p>
+            </div>
+            <img class="gif" src="" alt=" ah não! algo deu errado e o gif não carregou. pressione 'F' para respeito.">
+        </div>
+        <div id="popup04" class="popup">
+            <div class="fechar" onclick="fechar(04)">
+                <p class="btn">X</p>
+            </div>
+            <img class="gif" src="./gif/mutar.gif" alt=" ah não! algo deu errado e o gif não carregou. pressione 'F' para respeito.">
+        </div>
+        <div id="popup05" class="popup">
+            <div class="fechar" onclick="fechar(05)">
+                <p class="btn">X</p>
+            </div>
+            <img class="gif" src="./gif/cargo.gif" alt=" ah não! algo deu errado e o gif não carregou. pressione 'F' para respeito.">
+        </div>
+        <div id="popup06" class="popup">
+            <div class="fechar" onclick="fechar(06)">
+                <p class="btn">X</p>
+            </div>
+            <img class="gif" src="./gif/rcargo.gif" alt=" ah não! algo deu errado e o gif não carregou. pressione 'F' para respeito.">
+        </div>
+        <div id="popup07" class="popup">
+            <div class="fechar" onclick="fechar(07)">
+                <p class="btn">X</p>
+            </div>
+            <img class="gif" src="./gif/falar.gif" alt=" ah não! algo deu errado e o gif não carregou. pressione 'F' para respeito.">
         </div>
     </section>
 </main>
@@ -67,5 +118,7 @@
 <footer class="rodape">
     <img class="rodape-imagem" src="./svg/footer.svg">
 </footer>
+
+</body>
 
 </html>
