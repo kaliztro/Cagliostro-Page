@@ -156,8 +156,10 @@ p{
 }
 
 .section1 {
-    max-width: 90rem;
-    margin: 0 auto;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: auto; */
 }
 
 .div1 {
@@ -182,7 +184,16 @@ p{
     height: auto; /* altura */
     display: inline-block;  /* deixa um ao lado do outro */
     padding: 30px;
-    margin-left: 680px; /* deixa o espaço entre os 2 blocos */ 
+    margin-left: 650px; /* deixa o espaço entre os 2 blocos */ 
+}
+
+.div4 {
+    position: absolute; /* topo*/
+    width: auto;
+    height: auto; /* altura */
+    display: inline-block;  /* deixa um ao lado do outro */
+    padding: 30px;
+    margin-left: 1100px; /* deixa o espaço entre os 2 blocos */ 
 }
 
 .titulo{
