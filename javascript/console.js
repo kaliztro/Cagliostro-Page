@@ -1,4 +1,7 @@
-console.log(`EI!! O QUE VC ESTA FAZENDO AQUI?? SAIA LOGO OU EU IREI CHAMAR A MINHA MÃE!!`);
+console.log("%c✋ Espere! 🛑","font-family:Comic Sans MS; font-size: 60px; font-weight: bold; color: red; background: #fff; border: 1px solid #f3f3f3; border-radius: 10px; padding: 15px"),
+console.log('%cO QUE VC ESTA FAZENDO AQUI?? SAIA LOGO OU EU IREI CHAMAR A MINHA MÃE!!',"font-family:Comic Sans MS; font-size: 20px; font-weight: bold; color: #7F7F7F; background: #fff; border: 1px solid #f3f3f3; border-radius: 5px; padding: 8px"),
+console.log("%cDesenvolvido por Kaliztro#4988","font-family:Comic Sans MS; font-size:40px; font-weight:bold; color: #fff; background: linear-gradient(68.15deg, #090909 16.62%, #085783 85.61%); border-radius: 10px; padding: 30px"),
+
 
 function add(){
     location.href = "https://discord.com/api/oauth2/authorize?client_id=882715660134797342&permissions=0&scope=bot%20applications.commands";
